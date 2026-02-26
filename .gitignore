@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Env files
+.env
+
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+
+# Build files
+dist/
+build/
+
+# Logs
+logs
+*.log
+
+# OS
+.DS_Store
+
+
+node_modules/
+.env
+*.exe
+*.db
+*.txt
+dist/
+build/

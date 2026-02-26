@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "ai-check": "node scripts/pipeline.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "openai": "^6.24.0"
+  }
+}

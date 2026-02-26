@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f0f2f5;
+}
+
+/* FullCalendar Theme Overrides */
+.fc {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+}
+
+.fc .fc-button-primary {
+  background-color: #4f46e5 !important;
+  border-color: #4f46e5 !important;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: #4338ca !important;
+  border-color: #4338ca !important;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #3730a3 !important;
+  border-color: #3730a3 !important;
+}
+
+.fc .fc-daygrid-day-number,
+.fc .fc-col-header-cell-cushion {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.fc .fc-event {
+  border-radius: 6px !important;
+  padding: 2px 6px !important;
+  font-size: 0.8rem !important;
+  border: none !important;
+}
+
+/* Gradient sidebar */
+.sidebar-gradient {
+  background: linear-gradient(180deg, #312e81 0%, #4338ca 50%, #6366f1 100%);
+}
+
+/* Cards */
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Login page background */
+.login-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a5b4fc;
+}
